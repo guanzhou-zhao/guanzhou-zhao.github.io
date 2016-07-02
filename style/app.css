@@ -5,6 +5,10 @@
 .header {
   background-color: #eee;
   color: #333;
+  font-size: 18px;
+}
+.header .logo {
+  font-size: 30px;
 }
 ul {
   list-style: none;
@@ -13,7 +17,14 @@ ul {
 }
 .header ul li {
   display: inline-block;
+}
+.header ul li a {
   padding: 20px;
+}
+
+.header ul li a:hover {
+  background: #333;
+  color: white;
 }
 
 .main {
