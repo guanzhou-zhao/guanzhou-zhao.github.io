@@ -33,3 +33,6 @@ ul {
   text-decoration: none;
   background-color: #eee;
 }
+.content span {
+  font-weight: bold;
+}
