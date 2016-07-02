@@ -1,0 +1,35 @@
+.container {
+  max-width: 900px;
+}
+
+.header {
+  background-color: #eee;
+  color: #333;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.main {
+  padding: 50px 30px;
+}
+.main .blog-list .blog-item {
+  margin-bottom: 10px;
+}
+.main .blog-list .blog-item a {
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 5px #eee;
+  padding: 10px;
+}
+.main .blog-list .blog-item a:hover {
+  text-decoration: none;
+  background-color: #eee;
+}
