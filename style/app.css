@@ -66,8 +66,8 @@ ul {
 .main .blog-list .blog-item a {
   display: block;
   border-radius: 5px;
-  border: 1px solid #eee;
-  box-shadow: 0 2px 5px #eee;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px black;
   padding: 10px;
 }
 .main .blog-list .blog-item a:hover {
