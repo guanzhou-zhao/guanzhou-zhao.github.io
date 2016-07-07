@@ -44,14 +44,14 @@ ul {
   line-height: 30px;
   font-size: 18px;
   margin: 15px 0;
-  background-color: #3f67a8;
-  color: white;
-}
-
-.header ul li a:hover {
   background-color: white;
   border-radius: 60px;
   color: #3f67a8;
+}
+
+.header ul li a:hover {
+  background-color: #3f67a8;
+  color: white;
 }
 
 /*========= main =========*/
