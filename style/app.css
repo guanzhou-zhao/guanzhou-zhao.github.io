@@ -6,7 +6,6 @@ body {
 }
 a:hover {
   text-decoration: none;
-  color: #337ab7;
 }
 ul {
   list-style: none;
@@ -17,19 +16,22 @@ ul {
 }
 
 .header {
-  background-color: #f5f5f5;
-  color: #333;
-  height: 60px;
+  background: url("http://www.bobbyvandersluis.com/img/bg.png") left top repeat;
+  color: white;
+}
+.header .border-rim {
+  height: 14px;
+  background: url("http://www.bobbyvandersluis.com/img/teeth_top.png") left bottom repeat-x;
 }
 .header a {
   display: block;
 }
 .header .logo .brand {
+  font-family: 'Oswald', sans-serif;
   font-size: 26px;
   line-height: 30px;
   padding: 15px;
   float: left;
-  background-color: #ddd;
   color: white;
   text-shadow: 1px 1px 2px black;
 }
@@ -40,14 +42,19 @@ ul {
   display: inline-block;
 }
 .header ul li a {
-  padding: 15px;
+  font-family: 'Oswald', sans-serif;
+  padding: 0px 15px;
   line-height: 30px;
   font-size: 18px;
+  margin: 15px 0;
+  background-color: #3f67a8;
+  color: white;
 }
 
 .header ul li a:hover {
-  background: #ccc;
-  color: white;
+  background-color: white;
+  border-radius: 60px;
+  color: #3f67a8;
 }
 
 .main {
@@ -55,10 +62,9 @@ ul {
 }
 .main .title {
   margin-bottom: 30px;
-}
-.main p {
-  background-color: #ddd;
-  border-radius: 8px;
+  font-family: "Museo 700", serif;
+  color: rgba(102, 102, 102, 0.8);
+  text-shadow: 1px 1px 1px #fff, 0 0 0 rgba(0, 0, 0, .8), 1px 1px 1px #fff;
 }
 .main .blog-list .blog-item {
   margin-bottom: 10px;
@@ -75,5 +81,16 @@ ul {
   background-color: #eee;
 }
 .content span {
+  display: inline-block;
   font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #eee;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.main p {
+  background-color: rgba(39, 197, 1, 0.83);
+  border-radius: 8px;
+  padding: 5px 15px;
+  margin-left: 40px;
 }
