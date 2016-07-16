@@ -1,0 +1,10 @@
+header {
+  background: #3E64AA url(../images/teeth_top.png) left bottom repeat-x;
+}
+.slogons {
+  background: url(../images/leaf.jpg) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 40px 0;
+}
