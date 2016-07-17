@@ -1,65 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Guanzhou Zhao's Blog</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
-  </head>
-  
-  <body>
-    <div class="header">
-      <div class="container">
-        <div class="logo">
-          <a class="brand" href="/index.html">Blog</a>
+<head>
+  <title>Guanzhou's blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="one-half column">
+          <h1 class="logo"><a href="/" >Blog</a></h1>
         </div>
-        <ul>
-          <li><a href="/author-introduction.html">About Author</a></li>
-        </ul>
-      </div>
-      <div class="border-rim"></div>
-    </div>
-
-    <div class="main">
-      <div class="container">
-        <h2 class="post-title">Html Css DOM p1</h2>
-        <div class="post-info">Posted on <span class="time">July 7, 2016</span></div>
-        <ul class="list">
-          <li class="item">
-            <h3 class="item-label">Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?</h3>
-            <div class="item-content">
-              <p>Html is lke the structure of a building. CSS is decoration. DOM is the map of the building.</p>
-              <p>
-                Just like buildings can have different amount of rooms. Html can have any numbers of divisions. Rooms can have any kind of objects and divisions can have any kind of web objects too. Css determines the size, color, space of or between divisions. Decoration changs these attributes of a room. With DOM we can refer to any division in a webpage. With a map we can reach any space or objects in a building.
-              </p>
-            </div>
-          </li>
-          <li class="item">
-            <h3 class="item-label">What is meant by boxifying design?</h3>
-            <div class="item-content">
-              <p>Any objects in a webpage is a rectangular box. when implementing a design, firstly define the boxes in the design page.</p>
-            </div>
-          </li>
-          <li class="item">
-            <h3 class="item-label">What is the box model?</h3>
-            <div class="item-content">
-              <p>Any object is a box. box has margin, border, padding and content. </p>
-              <p>With the style attribute of "box-sizing: border-box", the "width, height" attribute define the size of the addition of width of border, padding and content.
-              </p>
-            </div>
-          </li>
-        </ul>
+        <div class="one-half column">
+          <ul class="nav">
+            <li><a href="./blogs.html">Blogs</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Cohorts</a></li>
+            <li><a href="#">About me</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <!-- this is a comment. 
+  </header><!-- end of header -->
 
-    
- Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?
- What is meant by boxifying design?
- What is the box model?
--->
-  
-  </body>
+  <div class="main artical">
+    <div class="container">
+      <div class="brief-info">
+        <h2 class="title">Html Css DOM p1</h2>
+        <ul class="tags">
+          <li class="tag">technical</li>
+          <li class="tag">html</li>
+          <li class="tag">css</li>
+          <li class="tag">dom</li>
+          <li class="tag">week 2</li>
+        </ul>
+        <p class="post-info">
+          <span class="by">by:<span class="author">Guanzhou</span></span>
+          <span class="date">July 2016</span>
+        </p>
+      </div>
+      <div class="content">
+        <p class="leading">
+          Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?
+        </p>
+        <p>
+          Just like buildings can have different amount of rooms. Html can have any numbers of divisions. Rooms can have any kind of objects and divisions can have any kind of web objects too. Css determines the size, color, space of or between divisions. Decoration changs these attributes of a room. With DOM we can refer to any division in a webpage. With a map we can reach any space or objects in a building.
+        </p>
+        <p class="leading">
+          What is meant by boxifying design?
+        </p>
+        <p>
+          Any objects in a webpage is a rectangular box. when implementing a design, firstly define the boxes in the design page.
+        </p>
+        <p class="leading">
+          What is the box model?
+        </p>
+        <p>
+          At first, I am expecting programming knowledge and a environment where I can get project experience. After orientation, I know it's more than knowledge. Now, I think I also have a lot to learn from my cohorts.
+        </p>
+        <p class="leading">
+          What is the box model?
+        </p>
+        <p>
+          Any object is a box. box has margin, border, padding and content.With the style attribute of "box-sizing: border-box", the "width, height" attribute define the size of the addition of width of border, padding and content.
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="one-third column">
+          <div class="about">
+            <h3>About me</h3>
+            <p>
+              I picked up some programming skills after working, depending on which I worked as a java developer for 7 months. World is big and I'd like to have a look, so I arrived NZ. I attended EDA to refine my programming skills.
+            </p>
+          </div>
+        </div>
+        <div class="one-third column">
+          <div class="contact">
+            <h3>Contact me</h3>
+            <ul>
+              <li class="address">66 Woodbury St., Russley, Christchurch 8042</li>
+              <li class="phone"><a href="tel:+64210512877">+64 210512877</a></li>
+              <li class="email"><a href="mailto:benzhao2866@gmail.com">benzhao2866@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="one-third column">
+          <div class="map">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
