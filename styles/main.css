@@ -1,5 +1,38 @@
+* {
+  font-size: 1em;
+}
 header {
-  background: #3E64AA url(../images/teeth_top.png) left bottom repeat-x;
+  background: #3E64AA;
+  color: white;
+}
+header .logo {
+  margin: 20px 0;
+}
+header .logo a {
+  color: white;
+  text-decoration: none;
+}
+header .logo a:hover {
+  text-shadow: 0 2px 2px black;
+}
+header .nav {
+  list-style: none;
+  margin: 20px 0;
+}
+header .nav li {
+  margin-bottom: 1em;
+  display: inline-block;
+}
+header .nav a{
+  text-decoration: none;
+  background-color: white;
+  border-radius: 1em;
+  padding:10px 20px;
+  color: #3E64AA;
+}
+header .nav a:hover {
+  color: white;
+  background-color: #3E84CA;
 }
 .slogons {
   background: url(../images/leaf.jpg) center center no-repeat;
@@ -7,4 +40,100 @@ header {
   text-align: center;
   color: white;
   padding: 40px 0;
+  margin: 2em auto;
+}
+.slogon {
+  background-color: rgba(0,0,0,0.5);
+}
+.slogon .desc {
+  display: none;
+}
+.main {
+  margin: 2em auto;
+}
+.main ul {
+  list-style-type: none;
+}
+.main .column {
+  text-align: center;
+}
+.main img {
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+}
+
+/* blogs.html */
+.main .blog-list .blog-item {
+  margin-bottom: 10px;
+}
+.main .blog-list .blog-item a {
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px #ddd;
+  padding: 10px;
+}
+.main .blog-list .blog-item a:hover {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+/* For blog */
+.main .title {
+  margin-bottom: 0.5em;
+  font-family: "Museo 700", serif;
+  color: rgba(102, 102, 102, 0.8);
+  text-shadow: 1px 1px 1px #fff, 0 0 0 rgba(0, 0, 0, .8), 1px 1px 1px #fff;
+}
+.main .brief-info .tags {
+  list-style: none;
+  margin: 0;
+}
+.main .brief-info .tags .tag {
+  display: inline-block;
+  background-color: #d0d0d0;
+  border-radius: 0.2em;
+  padding: 0 0.5em;
+}
+.main .brief-info .post-info .by {
+  font-weight: bold;
+}
+.main .brief-info .post-info .by .author {
+  color: #09c;
+}
+.main .brief-info .post-info .date {
+  color: #09c;
+}
+.main .content .leading {
+  margin: 0 0 1em 2em;
+  border-left: 4px solid #d0d0d0;
+  padding: 1em 0 0 1em;
+  font-weight: bold;
+}
+footer {
+  background: #0099CC;
+  color: white;
+}
+footer a {
+  color: white;
+}
+footer ul {
+  list-style: none;
+}
+footer .column > div {
+  padding: 12px;
+}
+footer .column:first-child {
+  border-bottom: 1px solid #00CCFF;
+}
+
+@media (min-width: 550px) {
+  footer .column {
+    border-bottom: none;
+    border-right: 1px solid #00CCFF;
+  }
+  footer .column:last-child {
+    border: none;
+  }
 }
