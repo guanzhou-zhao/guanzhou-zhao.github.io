@@ -28,7 +28,7 @@ header .columns:first-child .logo {
 header .columns:first-child [alt='menu'] {
   width: 4rem;
   float: right;
-  margin: 0;
+  margin-top: 30px;
 }
 header .nav li {
   display: inline-block;
