@@ -1,8 +1,15 @@
 * {
   font-size: 1em;
 }
+.four.columns {
+  width: 30.6666666667%;
+}
+.columns {
+  padding-left: 1%;
+  padding-right: 1%;
+}
 header {
-  background: #3E64AA;
+  /*background: #3E64AA;*/
   color: white;
 }
 header .logo {
@@ -15,24 +22,36 @@ header .logo a {
 header .logo a:hover {
   text-shadow: 0 2px 2px black;
 }
-header .nav {
-  list-style: none;
+header .columns:first-child .logo {
+  float:left;
+}
+header .columns:first-child [alt='menu'] {
+  width: 4rem;
+  float: right;
   margin: 20px 0;
 }
 header .nav li {
-  margin-bottom: 1em;
   display: inline-block;
+  margin-bottom: 0;
+}
+header .nav {
+  list-style: none;
+  margin: 30px 0 20px;
+  display: none;
+  text-align: right;
 }
 header .nav a{
+  display: block;
   text-decoration: none;
   background-color: white;
-  border-radius: 1em;
-  padding:10px 20px;
-  color: #3E64AA;
+  color: #0F9B14;
+  line-height: 5rem;
+  margin-left: 1rem;
+  font-size: 2rem;
+  padding-bottom: 1rem;
 }
 header .nav a:hover {
-  color: white;
-  background-color: #3E84CA;
+  border-bottom: 4px solid #0F9B14;
 }
 .slogons {
   background: url(../images/leaf.jpg) center center no-repeat;
@@ -40,7 +59,7 @@ header .nav a:hover {
   text-align: center;
   color: white;
   padding: 40px 0;
-  margin: 2em auto;
+  margin: 0 auto;
 }
 .slogon {
   background-color: rgba(0,0,0,0.5);
@@ -51,13 +70,49 @@ header .nav a:hover {
 .main {
   margin: 2em auto;
 }
-.main .column {
+.main .columns {
   text-align: center;
 }
 .main img {
   width: 50%;
   display: block;
-  margin: 20px auto;
+  margin: 0;
+}
+.main img[alt=blogs] {
+  background-color: darkred;
+  padding: 25%;
+}
+.main img[alt=products] {
+  background-color: mediumslateblue;
+  padding: 25%;
+}
+.main img[alt=cohorts] {
+  background-color: orangered;
+  padding: 25%;
+}
+.main img[alt=about] {
+  background-color: yellowgreen;
+  padding: 25%;
+}
+.main .img-anchor {
+  color: darkgray;
+  text-decoration: none;
+}
+.main .img-anchor .wrap {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.main .img-anchor p {
+  margin: 1rem auto;
+}
+.main .row:first-child {
+  border-bottom: 1px solid darkgray;
+}
+.main .row:not(:first-child) .columns:first-child {
+  padding-top: 2rem;
+}
+.main .columns:not(:last-child) {
+  border-right: 1px solid darkgray;
 }
 
 /* blogs.html */
@@ -118,19 +173,31 @@ footer a {
 footer ul {
   list-style: none;
 }
-footer .column > div {
+footer .columns > div {
   padding: 12px;
 }
-footer .column:first-child {
+footer .columns:first-child {
   border-bottom: 1px solid #00CCFF;
 }
 
 @media (min-width: 550px) {
-  footer .column {
+  footer .columns {
     border-bottom: none;
     border-right: 1px solid #00CCFF;
   }
-  footer .column:last-child {
+  footer .columns:last-child {
     border: none;
+  }
+
+  header .columns [alt='menu'] {
+    display: none;
+  }
+  header .columns:last-child .nav {
+    display: block;
+    height: 5rem;
+    vertical-align: bottom;
+  }
+  header .columns.first-child {
+    vertical-align: bottom;
   }
 }
