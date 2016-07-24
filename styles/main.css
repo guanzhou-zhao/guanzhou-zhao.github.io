@@ -13,7 +13,7 @@ header {
   color: white;
 }
 header .logo {
-  margin: 20px 0;
+  margin: 0 0;
 }
 header .logo a {
   color: white;
@@ -28,7 +28,7 @@ header .columns:first-child .logo {
 header .columns:first-child [alt='menu'] {
   width: 4rem;
   float: right;
-  margin: 20px 0;
+  margin: 0;
 }
 header .nav li {
   display: inline-block;
@@ -36,7 +36,7 @@ header .nav li {
 }
 header .nav {
   list-style: none;
-  margin: 30px 0 20px;
+  margin: 30px 0 0;
   display: none;
   text-align: right;
 }
