@@ -1,0 +1,79 @@
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-center;
+  flex-direction: column
+}
+
+#message {
+  display: flex;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.board div {
+  color: green;
+  font-size: 2rem;
+  width: 70px;
+  height: 70px;
+  border: 3px #ccc dotted;
+  border-style: outset;
+  border-radius: 10%;
+  background-color: white;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board div:hover {
+  background-color: white;
+}
+
+div.mine, div.mine:hover {
+  background: no-repeat center/60% url("images/bomb.svg") white;
+}
+
+div.hidden {
+  background: #eee;
+}
+
+div.hidden:hover {
+  background: #ccc;
+}
+
+div.marked, div.marked:hover {
+  background: no-repeat center/60% url("images/mark.svg") deepskyblue;
+}
+
+div.hint {
+  border-color: #eee;
+  border-style: solid;
+}
+div.wrong, div.wrong:hover {
+  background-color:red;
+}
+div.left, div.left:hover {
+  background-color: orange;
+}
+
+#minesLeft,
+#timeElasped {
+  padding-right: 0.3em;
+  border-style: inset;
+  background-color: #333333;
+  color: #25F125;
+  font-weight: bold;
+  width: 50%;
+  display: block;
+  text-align: right;
+  font-size: 1.5em;
+}
