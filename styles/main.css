@@ -105,6 +105,7 @@ header .nav a:hover {
 .main .img-anchor p {
   margin: 1rem auto;
 }
+/*
 .main .row:first-child {
   border-bottom: 1px solid darkgray;
 }
@@ -114,7 +115,15 @@ header .nav a:hover {
 .main .columns:not(:last-child) {
   border-right: 1px solid darkgray;
 }
-
+*/
+/* products.html */
+div.figure p {
+  text-align:center;
+  margin-bottom: 1em;
+}
+div.figure p img{
+  margin: auto;
+}
 /* blogs.html */
 .main .blog-list .blog-item {
   margin-bottom: 10px;
