@@ -1,212 +1,37 @@
-* {
-  font-size: 1em;
-}
-.main .four.columns {
-  width: 30.6666666667%;
-}
-.columns {
-  padding-left: 1%;
-  padding-right: 1%;
-}
-header {
-  /*background: #3E64AA;*/
-  color: white;
-}
-header .logo {
-  margin: 0 0;
-}
-header .logo a {
-  color: white;
-  text-decoration: none;
-}
-header .logo a:hover {
-  text-shadow: 0 2px 2px black;
-}
-header .columns:first-child .logo {
-  float:left;
-}
-header .columns:first-child [alt='menu'] {
-  width: 4rem;
-  float: right;
-  margin-top: 30px;
-}
-header .nav li {
-  display: inline-block;
-  margin-bottom: 0;
-}
-header .nav {
-  list-style: none;
-  margin: 30px 0 0;
-  display: none;
-  text-align: right;
-}
-header .nav a{
-  display: block;
-  text-decoration: none;
-  background-color: white;
-  color: #0F9B14;
-  line-height: 5rem;
-  margin-left: 1rem;
-  font-size: 2rem;
-  padding-bottom: 1rem;
-}
-header .nav a:hover {
-  border-bottom: 4px solid #0F9B14;
-}
-.slogons {
-  background: url(../images/leaf.jpg) center center no-repeat;
-  background-size: cover;
-  text-align: center;
-  color: white;
-  padding: 40px 0;
-  margin: 0 auto;
-}
-.slogon {
-  background-color: rgba(0,0,0,0.5);
-}
-.slogon .desc {
-  display: none;
-}
-.main {
-  margin: 2em auto;
-}
-.main .columns {
-  text-align: center;
-}
-.main img {
-  width: 50%;
-  display: block;
-  margin: 0;
-}
-.main img[alt=blogs] {
-  background-color: darkred;
-  padding: 25%;
-}
-.main img[alt=products] {
-  background-color: mediumslateblue;
-  padding: 25%;
-}
-.main img[alt=cohorts] {
-  background-color: orangered;
-  padding: 25%;
-}
-.main img[alt=about] {
-  background-color: yellowgreen;
-  padding: 25%;
-}
-.main .img-anchor {
-  color: darkgray;
-  text-decoration: none;
-}
-.main .img-anchor .wrap {
-  border-radius: 50%;
-  overflow: hidden;
-}
-.main .img-anchor p {
-  margin: 1rem auto;
-}
-/*
-.main .row:first-child {
-  border-bottom: 1px solid darkgray;
-}
-.main .row:not(:first-child) .columns:first-child {
-  padding-top: 2rem;
-}
-.main .columns:not(:last-child) {
-  border-right: 1px solid darkgray;
-}
-*/
-/* products.html */
-div.figure p {
-  text-align:center;
-  margin-bottom: 1em;
-}
-div.figure p img{
-  margin: auto;
-}
-/* blogs.html */
-.main .blog-list .blog-item {
-  margin-bottom: 10px;
-}
-.main .blog-list .blog-item a {
-  display: block;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 5px #ddd;
-  padding: 10px;
-}
-.main .blog-list .blog-item a:hover {
-  text-decoration: none;
-  background-color: #eee;
-}
+.shadow-border, .lt {
+  margin-bottom: 22px;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-color: #d3e0e9; }
 
-/* For blog */
-.main .title {
-  margin-bottom: 0.5em;
-  font-family: "Museo 700", serif;
-  color: rgba(102, 102, 102, 0.8);
-  text-shadow: 1px 1px 1px #fff, 0 0 0 rgba(0, 0, 0, .8), 1px 1px 1px #fff;
-}
-.main .brief-info .tags {
-  list-style: none;
-  margin: 0;
-}
-.main .brief-info .tags .tag {
-  display: inline-block;
-  background-color: #d0d0d0;
-  border-radius: 0.2em;
-  padding: 0 0.5em;
-}
-.main .brief-info .post-info .by {
-  font-weight: bold;
-}
-.main .brief-info .post-info .by .author {
-  color: #09c;
-}
-.main .brief-info .post-info .date {
-  color: #09c;
-}
-.main .content .leading {
-  margin: 0 0 1em 0;
-  border-left: 4px solid #d0d0d0;
-  padding: 1em 0 0 1em;
-  font-weight: bold;
-}
-footer {
-  background: #0099CC;
-  color: white;
-}
-footer a {
-  color: white;
-}
-footer ul {
-  list-style: none;
-}
-footer .columns > div {
-  padding: 12px;
-}
-footer .columns:first-child {
-  border-bottom: 1px solid #00CCFF;
-}
+.space-bottom {
+  margin-bottom: 30px !important; }
 
-@media (min-width: 550px) {
-  footer .columns {
-    border-bottom: none;
-    border-right: 1px solid #00CCFF;
-  }
-  footer .columns:last-child {
-    border: none;
-  }
+.ltt {
+  background-color: #eeeeee;
+  height: 150px; }
 
-  header .columns [alt='menu'] {
-    display: none;
-  }
-  header .columns:last-child .nav {
-    display: block;
-    height: 5rem;
-    vertical-align: bottom;
-  }
-  header .columns.first-child {
-    vertical-align: bottom;
-  }
-}
+.ltb {
+  text-align: center; }
+  .ltb img {
+    vertical-align: middle; }
+  .ltb .aoh {
+    max-width: 100px;
+    margin-top: -50px;
+    margin-bottom: 5px;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .ltb .aoi {
+    list-style: none;
+    padding: 0; }
+  .ltb .aoj {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #d4dbe0; }
+  .ltb .aoj:last-child {
+    border-right: 0; }
+
+/*# sourceMappingURL=main.css.map */

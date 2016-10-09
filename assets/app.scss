@@ -1,0 +1,45 @@
+@import "color";
+.shadow-border {
+  margin-bottom: 22px;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-color: #d3e0e9;
+}
+.space-bottom {
+  margin-bottom: 30px !important;
+}
+.lt {
+  @extend .shadow-border;
+}
+.ltt {
+  background-color: $gray-lighter;
+  height: 150px;
+}
+.ltb {
+  text-align: center;
+  img {
+    vertical-align: middle;
+  }
+  .aoh {
+    max-width: 100px;
+    margin-top: -50px;
+    margin-bottom: 5px;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  .aoi {
+    list-style: none;
+    padding: 0;
+  }
+  .aoj {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #d4dbe0;
+  }
+  .aoj:last-child {
+    border-right: 0;
+  }
+}

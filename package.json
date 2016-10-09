@@ -1,0 +1,24 @@
+{
+  "name": "guanzhou-zhao.github.io",
+  "version": "1.0.0",
+  "description": "Guanzhou's blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guanzhou-zhao/guanzhou-zhao.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guanzhou-zhao/guanzhou-zhao.github.io/issues"
+  },
+  "homepage": "https://github.com/guanzhou-zhao/guanzhou-zhao.github.io#readme",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7"
+  },
+  "dependencies": {}
+}
