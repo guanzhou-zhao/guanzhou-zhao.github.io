@@ -43,6 +43,7 @@ button, input, select, textarea {
     font: inherit;
     margin: 0;
 }
+/* header search input */
 .Header {
     z-index: 1;
     padding-top: 12px;
@@ -143,7 +144,7 @@ label {
     color: inherit;
 }
 
-
+/* github cat logo*/
 .header-logo-invertocat {
     margin: -1px 15px -1px -2px;
     color: #fff;
@@ -161,4 +162,40 @@ label {
     display: inline-block;
     vertical-align: text-top;
     fill: currentColor;
+}
+
+/* header list */
+ul, ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.flex-items-center {
+    -webkit-box-align: center !important;
+    align-items: center !important;
+}
+.pl-2 {
+    padding-left: 8px !important;
+}
+.text-bold {
+    font-weight: 600 !important;
+}
+.list-style-none {
+    list-style: none !important;
+}
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.px-2 {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+}
+.HeaderNavlink {
+    display: block;
+    color: rgba(255,255,255,0.75);
 }
