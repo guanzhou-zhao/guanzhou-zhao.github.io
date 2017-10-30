@@ -2,6 +2,14 @@
 * {
     box-sizing: border-box;
 }
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+}
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
@@ -9,8 +17,27 @@ body {
     color: #24292e;
     background-color: #fff;
 }
+body {
+    min-width: 1020px;
+    word-wrap: break-word;
+}
+.position-relative {
+    position: relative !important;
+}
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+    display: block;
+}
+button, input, select, textarea {
+    font: inherit;
+    margin: 0;
+}
 button, input {
     overflow: visible;
+}
+input, select, textarea, button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 button, input, select, textarea {
     font: inherit;
@@ -40,58 +67,33 @@ button, input, select, textarea {
     border: 0;
     box-shadow: none;
 }
-.d-flex {
-    display: -webkit-box !important;
-    display: flex !important;
-}
-.px-3 {
-    padding-right: 16px !important;
-    padding-left: 16px !important;
-}
-.flex-justify-between {
-    -webkit-box-pack: justify !important;
-    justify-content: space-between !important;
-}
-
 .container-lg {
     max-width: 1012px;
     margin-right: auto;
     margin-left: auto;
 }
-
-.header-logo-invertocat {
-    margin: -1px 15px -1px -2px;
-    color: #fff;
-    white-space: nowrap;
+.flex-justify-between {
+    -webkit-box-pack: justify !important;
+    justify-content: space-between !important;
 }
-
-.header-logo-invertocat .octicon-mark-github {
-    float: left;
+.px-3 {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
 }
-
-.octicon {
-    vertical-align: text-bottom;
+.d-flex {
+    display: -webkit-box !important;
+    display: flex !important;
 }
-
-.octicon {
-    display: inline-block;
-    vertical-align: text-top;
-    fill: currentColor;
-}
-
 .flex-auto {
     -webkit-box-flex: 1 !important;
     flex: 1 1 auto !important;
 }
-
 .header-search {
     width: 300px;
     font-size: 13px;
 }
-
-form {
-    display: block;
-    margin-top: 0em;
+label {
+    font-weight: 600;
 }
 .form-control, .form-select {
     min-height: 34px;
@@ -108,6 +110,23 @@ form {
     outline: none;
     box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
 }
+.header-search-wrapper {
+    display: table;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    padding: 0;
+    font-weight: normal;
+    vertical-align: middle;
+}
+.Header .header-search-wrapper {
+    min-height: 30px;
+    font-size: inherit;
+    color: #fff;
+    background-color: rgba(255,255,255,0.125);
+    border: 0;
+    box-shadow: none;
+}
 .header-search-input {
     display: table-cell;
     width: 99.999%;
@@ -122,4 +141,24 @@ form {
     min-height: 30px;
     font-size: inherit;
     color: inherit;
+}
+
+
+.header-logo-invertocat {
+    margin: -1px 15px -1px -2px;
+    color: #fff;
+    white-space: nowrap;
+}
+.header-logo-invertocat .octicon-mark-github {
+    float: left;
+}
+
+.octicon {
+    vertical-align: text-bottom;
+}
+
+.octicon {
+    display: inline-block;
+    vertical-align: text-top;
+    fill: currentColor;
 }
