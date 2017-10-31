@@ -282,9 +282,15 @@ summary:focus {
     right: 0;
     left: auto;
 }
+details:not([open])>*:not(summary) {
+    display: none;
+}
 .user-nav .dropdown-menu {
     width: 180px;
     margin-top: 8px;
+}
+.dropdown-details:not([open])>*:not(summary) {
+    display: none;
 }
 .dropdown-item {
     display: block;
