@@ -153,18 +153,15 @@ label {
 .header-logo-invertocat .octicon-mark-github {
     float: left;
 }
-
-.octicon {
-    vertical-align: text-bottom;
-}
-
 .octicon {
     display: inline-block;
     vertical-align: text-top;
     fill: currentColor;
 }
-
-/* header list */
+.octicon {
+    vertical-align: text-bottom;
+}
+/* header list left*/
 ul, ol {
     padding-left: 0;
     margin-top: 0;
@@ -198,4 +195,102 @@ a {
 .HeaderNavlink {
     display: block;
     color: rgba(255,255,255,0.75);
+}
+
+/* header list right */
+.dropdown {
+    position: relative;
+}
+.d-inline-block {
+    display: inline-block !important;
+}
+.tooltipped {
+    position: relative;
+}
+.notification-indicator {
+    color: rgba(255,255,255,0.75);
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.user-nav .octicon {
+    width: 16px;
+}
+details summary::-webkit-details-marker { display:none; }
+summary {
+    display: list-item;
+}
+.dropdown-details:not([open]) {
+    cursor: pointer;
+}
+details summary {
+    cursor: pointer;
+}
+.dropdown-details>summary {
+    list-style: none;
+}
+.HeaderNavlink:hover, .HeaderNavlink:focus {
+    color: #fff;
+    text-decoration: none;
+}
+summary:focus {
+    outline: none;
+}
+.float-left {
+    float: left !important;
+}
+.mt-1 {
+    margin-top: 4px !important;
+}
+.mr-1 {
+    margin-right: 4px !important;
+}
+.user-nav .octicon-plus {
+    margin-right: 1px;
+}
+
+.dropdown-caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    content: "";
+    border: 4px solid;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+/* dropdown menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    width: 160px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 2px;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(27,31,35,0.15);
+    border-radius: 4px;
+    box-shadow: 0 3px 12px rgba(27,31,35,0.15);
+}
+.dropdown-menu-sw {
+    right: 0;
+    left: auto;
+}
+.user-nav .dropdown-menu {
+    width: 180px;
+    margin-top: 8px;
+}
+.dropdown-item {
+    display: block;
+    padding: 4px 10px 4px 15px;
+    overflow: hidden;
+    color: #24292e;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
