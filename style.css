@@ -792,3 +792,43 @@ button, html [type="button"], [type="reset"], [type="submit"] {
     width: 10px;
     height: 10px;
 }
+
+/* timeline year list */
+.bg-white {
+    background-color: #fff !important;
+}
+.pl-5 {
+    padding-left: 32px !important;
+}
+.profile-timeline-year-list {
+    top: 74px;
+}
+.filter-list {
+    list-style-type: none;
+}
+.filter-item {
+    position: relative;
+    display: block;
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #586069;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.filter-item.selected {
+    color: #fff;
+    background-color: #0366d6;
+}
+.filter-list.small .filter-item {
+    padding: 4px 10px;
+    margin: 0 0 2px;
+    font-size: 12px;
+}
+.dropdown-menu-content {
+    display: none;
+}
