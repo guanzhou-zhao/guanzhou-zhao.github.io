@@ -163,7 +163,39 @@
       </div>
       </div>
       <div class="col-9 float-left pl-2">
+        <div class="user-profile-nav js-sticky top-0" style="position: static; top: 0px; left: 403px; width: 727px;">
+              <nav class="underline-nav" data-pjax="" role="navigation">
+                <a href="#" class="underline-nav-item selected" aria-selected="true" role="tab">
+                  Overview
+                </a>
+                <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
+                   Repositories
+                   <span class="Counter">
+                     53
+                   </span>
+                </a>
 
+
+                <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
+                  Stars
+                  <span class="Counter">
+                    9
+                  </span>
+                </a>
+                <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
+                  Followers
+                  <span class="Counter">
+                    9
+                  </span>
+                </a>
+                <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
+                  Following
+                  <span class="Counter">
+                    9
+                  </span>
+                </a>
+              </nav>
+            </div>
       </div>
     </div>
   </div>
@@ -176,6 +208,11 @@
         });
         $('.tooltipped').hover(function(event) {
           $(this).addClass("tooltipped-show");
+        })
+        $('.underline-nav-item').click(function(event) {
+
+          $('.underline-nav-item').removeClass('selected');
+          $(this).addClass('selected')
         })
     });
   </script>

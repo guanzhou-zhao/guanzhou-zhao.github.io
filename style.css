@@ -7,6 +7,9 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+    display: block;
+}
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
@@ -505,3 +508,47 @@ img {
   opacity: 1;
 }
 /* main right */
+.col-9 {
+    width: 75%;
+}
+.pl-2 {
+    padding-left: 8px !important;
+}
+/* main right nav */
+.top-0 {
+    top: 0 !important;
+}
+.user-profile-nav {
+    background-color: #fff;
+    border-bottom: solid 1px #d1d5da;
+}
+.underline-nav {
+    display: table;
+    height: 62px;
+}
+.user-profile-nav .underline-nav {
+    height: 62px;
+}
+.underline-nav-item {
+    display: table-cell;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #586069;
+    vertical-align: middle;
+    border-bottom: 2px solid transparent;
+}
+.underline-nav-item.selected {
+    color: #24292e;
+    border-bottom-color: #e36209;
+}
+.Counter {
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    color: #586069;
+    background-color: rgba(27,31,35,0.08);
+    border-radius: 20px;
+}
