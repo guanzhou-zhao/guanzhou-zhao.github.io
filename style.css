@@ -721,3 +721,74 @@ img {
 .d-table-cell {
     display: table-cell !important;
 }
+
+/* contribution graph */
+.select-menu.select-menu-modal-right {
+    position: relative;
+}
+button, select {
+    text-transform: none;
+}
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+.contributions-setting .contributions-setting-link {
+    font-size: 13px;
+}
+.select-menu-modal-holder {
+    position: absolute;
+    z-index: 30;
+    display: none;
+}
+.select-menu.select-menu-modal-right .select-menu-modal-holder {
+    right: 0;
+}
+.mb-5 {
+    margin-bottom: 32px !important;
+}
+.py-2 {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+.height-full {
+    height: 100% !important;
+}
+.calendar-graph {
+    height: 126px;
+    padding: 5px 0 0;
+    text-align: center;
+}
+.calendar-graph text.month {
+    font-size: 10px;
+    fill: #767676;
+}
+.calendar-graph text.wday {
+    font-size: 9px;
+    fill: #767676;
+}
+.mx-3 {
+    margin-right: 16px !important;
+    margin-left: 16px !important;
+}
+.pb-1 {
+    padding-bottom: 4px !important;
+}
+.contrib-footer {
+    padding: 0 10px 12px;
+    font-size: 11px;
+}
+.contrib-legend {
+    float: right;
+}
+.contrib-legend .legend {
+    position: relative;
+    bottom: -1px;
+    display: inline-block;
+    margin: 0 5px;
+    list-style: none;
+}
+.contrib-legend .legend li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
