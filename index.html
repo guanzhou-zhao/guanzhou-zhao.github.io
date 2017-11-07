@@ -164,41 +164,188 @@
       </div>
       <div class="col-9 float-left pl-2">
         <div class="user-profile-nav js-sticky top-0" style="position: static; top: 0px; left: 403px; width: 727px;">
-              <nav class="underline-nav" data-pjax="" role="navigation">
-                <a href="#" class="underline-nav-item selected" aria-selected="true" role="tab">
-                  Overview
-                </a>
-                <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
-                   Repositories
-                   <span class="Counter">
-                     53
-                   </span>
-                </a>
+          <nav class="underline-nav" data-pjax="" role="navigation">
+            <a href="#" class="underline-nav-item selected" aria-selected="true" role="tab">
+              Overview
+            </a>
+            <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
+               Repositories
+               <span class="Counter">
+                 53
+               </span>
+            </a>
 
 
-                <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
-                  Stars
-                  <span class="Counter">
-                    9
-                  </span>
+            <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
+              Stars
+              <span class="Counter">
+                9
+              </span>
+            </a>
+            <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
+              Followers
+              <span class="Counter">
+                9
+              </span>
+            </a>
+            <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
+              Following
+              <span class="Counter">
+                9
+              </span>
+            </a>
+          </nav>
+        </div><!-- user-profile-nav -->
+        <div class="position-relative">
+          <div class="mt-4">
+            <div class="js-pinned-repos-reorder-container">
+                <a href="#customize-pinned-repos-modal" class="btn-link muted-link float-right mt-1 pinned-repos-setting-link" rel="facebox">
+                  Customize your pinned repositories
                 </a>
-                <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
-                  Followers
-                  <span class="Counter">
-                    9
-                  </span>
-                </a>
-                <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
-                  Following
-                  <span class="Counter">
-                    9
-                  </span>
-                </a>
-              </nav>
-            </div>
-      </div>
-    </div>
-  </div>
+
+                <div id="customize-pinned-repos-modal" style="display: none;">
+                  <h2 class="facebox-header pb-0 border-bottom-0 mb-1" data-facebox-id="facebox-header">
+                    Customize your pinned repositories
+                  </h2>
+                  <include-fragment src="" class="js-pinned-repos-settings-fragment text-center" data-url="/users/guanzhou-zhao/pinned_repositories_modal">
+                  <img alt="Loading" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64">
+                  </include-fragment>
+                </div>
+              <h2 class="f4 mb-2 text-normal">
+                  Pinned repositories
+                <img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="13" class="spinner pinned-repos-spinner js-pinned-repos-spinner" alt="">
+                <span class="ml-2 text-gray f6 js-pinned-repos-reorder-message" role="status" aria-live="polite" data-error-text="Something went wrong." data-success-text="Order updated."></span>
+              </h2>
+
+                  <!-- '"` --><!-- </textarea></xmp> --><form accept-charset="UTF-8" action="/users/guanzhou-zhao/reorder_pinned_repositories" class="js-pinned-repos-reorder-form" id="user-19282953-pinned-repos-reorder-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="_method" type="hidden" value="put"><input name="authenticity_token" type="hidden" value="jQn5cC1AVYtS2RbEkWQ+FZRDA53VIe3am93d7Wwt+UBwbMonD11QU6E5kx6dJp273mK0zbH27bL0b5FITHt9TA=="></div>
+                    <ol class="pinned-repos-list  mb-4 js-pinned-repos-reorder-list">
+                <li class="pinned-repo-item  p-3 mb-3 border border-gray-dark rounded-1 js-pinned-repo-list-item public source reorderable sortable-button-item">
+                  <div class="pinned-repo-item-content">
+                    <span class="d-block position-relative">
+                        <input class="form-control" id="pinned-repo-reorder-62443314" name="repo_ids[]" type="hidden" value="62443314">
+                        <span class="pinned-repository-handle js-pinned-repository-reorder float-left pr-2" title="Drag to reorder">
+                          <svg aria-hidden="true" class="octicon octicon-grabber" height="16" version="1.1" viewBox="0 0 8 16" width="8"><path fill-rule="evenodd" d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"></path></svg>
+                        </span>
+                        <a href="/guanzhou-zhao/guanzhou-zhao.github.io" class="text-bold">
+                      <span class="repo js-repo" title="guanzhou-zhao.github.io">guanzhou-zhao.github.io</span>
+                      </a>
+                        <button type="button" class="btn btn-outline btn-sm show-on-focus sortable-button js-sortable-button right-0" data-direction="up"><svg aria-label="Move guanzhou-zhao.github.io up" class="octicon octicon-chevron-up" height="16" role="img" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5z"></path></svg></button>
+                        <button type="button" class="btn btn-outline btn-sm show-on-focus sortable-button js-sortable-button right-0" data-direction="down"><svg aria-label="Move guanzhou-zhao.github.io down" class="octicon octicon-chevron-down" height="16" role="img" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6z"></path></svg></button>
+                    </span>
+
+
+                    <p class="pinned-repo-desc text-gray text-small d-block mt-2 mb-3">Guanzhou's blog</p>
+
+                    <p class="mb-0 f6 text-gray">
+                          <span class="repo-language-color pinned-repo-meta" style="background-color:#e34c26;"></span>
+                        HTML
+                    </p>
+                  </div>
+                </li>
+                <li class="pinned-repo-item  p-3 mb-3 border border-gray-dark rounded-1 js-pinned-repo-list-item public source reorderable sortable-button-item">
+                  <div class="pinned-repo-item-content">
+                    <span class="d-block position-relative">
+                        <input class="form-control" id="pinned-repo-reorder-96982616" name="repo_ids[]" type="hidden" value="96982616">
+                        <span class="pinned-repository-handle js-pinned-repository-reorder float-left pr-2" title="Drag to reorder">
+                          <svg aria-hidden="true" class="octicon octicon-grabber" height="16" version="1.1" viewBox="0 0 8 16" width="8"><path fill-rule="evenodd" d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"></path></svg>
+                        </span>
+                        <a href="/guanzhou-zhao/calculate-cabinet-plan" class="text-bold">
+                      <span class="repo js-repo" title="calculate-cabinet-plan">calculate-cabinet-plan</span>
+                      </a>
+                        <button type="button" class="btn btn-outline btn-sm show-on-focus sortable-button js-sortable-button right-0" data-direction="up"><svg aria-label="Move calculate-cabinet-plan up" class="octicon octicon-chevron-up" height="16" role="img" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5z"></path></svg></button>
+                        <button type="button" class="btn btn-outline btn-sm show-on-focus sortable-button js-sortable-button right-0" data-direction="down"><svg aria-label="Move calculate-cabinet-plan down" class="octicon octicon-chevron-down" height="16" role="img" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6z"></path></svg></button>
+                    </span>
+
+
+                    <p class="pinned-repo-desc text-gray text-small d-block mt-2 mb-3">A web app for calculating cabinet materials plan which is printable and savable.</p>
+
+                    <p class="mb-0 f6 text-gray">
+                          <span class="repo-language-color pinned-repo-meta" style="background-color:#f1e05a;"></span>
+                        JavaScript
+                    </p>
+                  </div>
+                </li>
+                <li class="pinned-repo-item  p-3 mb-3 border border-gray-dark rounded-1 js-pinned-repo-list-item public source reorderable sortable-button-item">
+                  <div class="pinned-repo-item-content">
+                    <span class="d-block position-relative">
+                        <input class="form-control" id="pinned-repo-reorder-106966782" name="repo_ids[]" type="hidden" value="106966782">
+                        <span class="pinned-repository-handle js-pinned-repository-reorder float-left pr-2" title="Drag to reorder">
+                          <svg aria-hidden="true" class="octicon octicon-grabber" height="16" version="1.1" viewBox="0 0 8 16" width="8"><path fill-rule="evenodd" d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"></path></svg>
+                        </span>
+                        <a href="/guanzhou-zhao/vs" class="text-bold">
+                      <span class="repo js-repo" title="vs">vs</span>
+                      </a>
+                        <button type="button" class="btn btn-outline btn-sm show-on-focus sortable-button js-sortable-button right-0" data-direction="up"><svg aria-label="Move vs up" class="octicon octicon-chevron-up" height="16" role="img" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5z"></path></svg></button>
+                        <button type="button" class="btn btn-outline btn-sm show-on-focus sortable-button js-sortable-button right-0" data-direction="down"><svg aria-label="Move vs down" class="octicon octicon-chevron-down" height="16" role="img" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6z"></path></svg></button>
+                    </span>
+
+
+                    <p class="pinned-repo-desc text-gray text-small d-block mt-2 mb-3">Backend for WeChat service</p>
+
+                    <p class="mb-0 f6 text-gray">
+                          <span class="repo-language-color pinned-repo-meta" style="background-color:#f1e05a;"></span>
+                        JavaScript
+                        <a href="/guanzhou-zhao/vs/stargazers" class="pinned-repo-meta muted-link">
+                          <svg aria-label="stars" class="octicon octicon-star" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+                          2
+                        </a>
+                    </p>
+                  </div>
+                </li>
+                <li class="pinned-repo-item  p-3 mb-3 border border-gray-dark rounded-1 js-pinned-repo-list-item public source reorderable sortable-button-item">
+                  <div class="pinned-repo-item-content">
+                    <span class="d-block position-relative">
+                        <input class="form-control" id="pinned-repo-reorder-96755296" name="repo_ids[]" type="hidden" value="96755296">
+                        <span class="pinned-repository-handle js-pinned-repository-reorder float-left pr-2" title="Drag to reorder">
+                          <svg aria-hidden="true" class="octicon octicon-grabber" height="16" version="1.1" viewBox="0 0 8 16" width="8"><path fill-rule="evenodd" d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"></path></svg>
+                        </span>
+                        <a href="/guanzhou-zhao/SMACSS" class="text-bold">
+                      <span class="repo js-repo" title="SMACSS">SMACSS</span>
+                      </a>
+                        <button type="button" class="btn btn-outline btn-sm show-on-focus sortable-button js-sortable-button right-0" data-direction="up"><svg aria-label="Move SMACSS up" class="octicon octicon-chevron-up" height="16" role="img" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5z"></path></svg></button>
+                        <button type="button" class="btn btn-outline btn-sm show-on-focus sortable-button js-sortable-button right-0" data-direction="down"><svg aria-label="Move SMACSS down" class="octicon octicon-chevron-down" height="16" role="img" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6z"></path></svg></button>
+                    </span>
+
+
+                    <p class="pinned-repo-desc text-gray text-small d-block mt-2 mb-3">key-points of SMACSS (Scalable and Modular Architecture for CSS)</p>
+
+                    <p class="mb-0 f6 text-gray">
+                    </p>
+                  </div>
+                </li>
+                <li class="pinned-repo-item  p-3 mb-3 border border-gray-dark rounded-1 js-pinned-repo-list-item public source reorderable sortable-button-item">
+                  <div class="pinned-repo-item-content">
+                    <span class="d-block position-relative">
+                        <input class="form-control" id="pinned-repo-reorder-97465486" name="repo_ids[]" type="hidden" value="97465486">
+                        <span class="pinned-repository-handle js-pinned-repository-reorder float-left pr-2" title="Drag to reorder">
+                          <svg aria-hidden="true" class="octicon octicon-grabber" height="16" version="1.1" viewBox="0 0 8 16" width="8"><path fill-rule="evenodd" d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"></path></svg>
+                        </span>
+                        <a href="/guanzhou-zhao/BEM" class="text-bold">
+                      <span class="repo js-repo" title="BEM">BEM</span>
+                      </a>
+                        <button type="button" class="btn btn-outline btn-sm show-on-focus sortable-button js-sortable-button right-0" data-direction="up"><svg aria-label="Move BEM up" class="octicon octicon-chevron-up" height="16" role="img" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5z"></path></svg></button>
+                        <button type="button" class="btn btn-outline btn-sm show-on-focus sortable-button js-sortable-button right-0" data-direction="down"><svg aria-label="Move BEM down" class="octicon octicon-chevron-down" height="16" role="img" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6z"></path></svg></button>
+                    </span>
+
+
+                    <p class="pinned-repo-desc text-gray text-small d-block mt-2 mb-3">A track of learning BEM Methodology.</p>
+
+                    <p class="mb-0 f6 text-gray">
+                    </p>
+                  </div>
+                </li>
+
+                <li class="pinned-repo-item mb-3 rounded-1 border-gray-dark empty">
+                  <a href="#customize-pinned-repos-modal" class="text-small muted-link d-table-cell mx-auto v-align-middle p-3" rel="facebox">You can now pin up to 6 repositories.</a>
+                </li>
+            </ol>
+
+            </form></div>    
+          </div><!-- mt-4 -->
+        </div><!-- position-relative -->
+      </div><!-- col-9 -->
+    </div><!-- container-lg -->
+  </div><!-- main -->
   <script>
 
     $(document).ready(function() {
