@@ -1072,3 +1072,19 @@ h3 {
     border: 1px solid #e1e4e8;
     border-radius: 3px;
 }
+.mt-6 {
+    margin-top: 40px !important;
+}
+.py-6 {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+.flex-wrap {
+    flex-wrap: wrap !important;
+}
+.mr-3 {
+    margin-right: 16px !important;
+}
+.footer-octicon {
+    color: #c6cbd1;
+}
