@@ -1,2 +1,1 @@
-# guanzhou-zhao.github.io
-Guanzhou's blog
+# [guanzhou-zhao.github.io](https://guanzhou-zhao.github.io/)
