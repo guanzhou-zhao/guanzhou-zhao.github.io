@@ -167,12 +167,13 @@
       </div>
       </div>
       <div class="col-9 float-left pl-2">
-        <div class="user-profile-nav js-sticky top-0" style="position: static; top: 0px; left: 403px; width: 727px;">
-          <nav class="underline-nav" data-pjax="" role="navigation">
-            <a href="#" class="underline-nav-item selected" aria-selected="true" role="tab">
+        <div class="UnderlineNav user-profile-nav top-0 is-placeholder" style="visibility: hidden; display: none; height: 55px;"></div>
+        <div class="UnderlineNav user-profile-nav js-sticky top-0" style="position: static; top: 0px; left: 403px; width: 727px;">
+          <nav class="UnderlineNav-body" data-pjax="" role="navigation">
+            <a href="#" class="UnderlineNav-item selected" aria-selected="true" role="tab">
               Overview
             </a>
-            <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
+            <a href="#" class="UnderlineNav-item " aria-selected="false" role="tab">
                My Works
                <span class="Counter">
                  53
@@ -180,19 +181,19 @@
             </a>
 
 
-            <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
+            <a href="#" class="UnderlineNav-item " aria-selected="false" role="tab">
               Skill set
               <span class="Counter">
                 9
               </span>
             </a>
-            <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
+            <a href="#" class="UnderlineNav-item " aria-selected="false" role="tab">
               Self description
               <span class="Counter">
                 9
               </span>
             </a>
-            <a href="#" class="underline-nav-item " aria-selected="false" role="tab">
+            <a href="#" class="UnderlineNav-item " aria-selected="false" role="tab">
               Thanks
               <span class="Counter">
                 9
@@ -1494,11 +1495,41 @@
         $('.tooltipped').hover(function(event) {
           $(this).addClass("tooltipped-show");
         })
-        $('.underline-nav-item').click(function(event) {
+        $('.UnderlineNav-item').click(function(event) {
 
-          $('.underline-nav-item').removeClass('selected');
+          $('.UnderlineNav-item').removeClass('selected');
           $(this).addClass('selected')
         })
+        $(window).scroll(function () {
+          //if you hard code, then use console
+          //.log to determine when you want the
+          //nav bar to stick.
+          console.log($(window).scrollTop())
+          var _nav = $('.user-profile-nav.js-sticky');
+          var _navPlaceholder = $('.user-profile-nav.is-placeholder')
+          var isFixed = _nav.css('position') == 'fixed';
+          if ($(window).scrollTop() > 78 && !isFixed) {
+            _nav.css({
+              position: 'fixed',
+              top: '0px',
+              left: '403px',
+              width: '727px',
+              'margin-top': '0px'
+            });
+            _navPlaceholder.css('display', 'block')
+            _nav.addClass('is-stuck')
+          }
+          if ($(window).scrollTop() < 78 && isFixed) {
+            _nav.css({
+              position: 'static',
+              top: '0px',
+              left: '403px',
+              width: '727px'
+            });
+            _navPlaceholder.css('display', 'none')
+            _nav.removeClass('is-stuck')
+          }
+      });
     });
   </script>
 </body>
