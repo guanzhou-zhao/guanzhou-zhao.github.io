@@ -134,10 +134,21 @@
   <div role="main">
     <div class="container-lg clearfix px-3 mt-4">
       <div class="h-card col-3 float-left pr-3">
+        <div class="user-profile-sticky-bar js-user-profile-sticky-bar">
+          <div class="user-profile-mini-vcard d-table">
+            <span class="user-profile-mini-avatar d-table-cell v-align-middle lh-condensed-ultra pr-2">
+              <img alt="@guanzhou-zhao" class="rounded-1" height="32" src="https://avatars3.githubusercontent.com/u/19282953?s=64&amp;v=4" width="32">
+            </span>
+            <span class="d-table-cell v-align-middle lh-condensed js-user-profile-following-mini-toggle">
+              <strong>guanzhou-zhao</strong>
+            </span>
+          </div>
+        </div>
         <a href="#" class="u-photo d-block tooltipped tooltipped-s">
           <img alt="" class="avatar width-full rounded-2" height="230" src="https://avatars3.githubusercontent.com/u/19282953?s=460&amp;v=4" width="230">
         </a>
-        <div class="vcard-names-container py-3 js-sticky js-user-profile-sticky-fields " style="position: static;">
+        <div class="vcard-names-container py-3 js-user-profile-sticky-fields is-placeholder" style="visibility: hidden; display: none; height: 86px;"></div>
+        <div class="vcard-names-container py-3 js-sticky js-user-profile-sticky-fields " style="position: static; top: 0px; left: 150px; width: 229px;">
           <h1 class="vcard-names">
             <span class="p-name vcard-fullname d-block" itemprop="name">GuanZhou Zhao</span>
             <span class="p-nickname vcard-username d-block" itemprop="additionalName">guanzhou-zhao</span>
@@ -1504,8 +1515,9 @@
           //if you hard code, then use console
           //.log to determine when you want the
           //nav bar to stick.
-          console.log($(window).scrollTop())
-          var _nav = $('.user-profile-nav.js-sticky');
+          // console.log($(window).scrollTop())
+          var _nav = $('.user-profile-nav.js-sticky')
+          var _userProfileStickyBar = $('.js-user-profile-sticky-bar')
           var _navPlaceholder = $('.user-profile-nav.is-placeholder')
           var isFixed = _nav.css('position') == 'fixed';
           if ($(window).scrollTop() > 78 && !isFixed) {
@@ -1528,6 +1540,14 @@
             });
             _navPlaceholder.css('display', 'none')
             _nav.removeClass('is-stuck')
+          }
+          if ($(window).scrollTop() > 308) {
+            _userProfileStickyBar.addClass('is-stuck')
+            $('.vcard-names-container.js-sticky').css({visibility: 'hidden'})
+          }
+          if ($(window).scrollTop() < 308) {
+            _userProfileStickyBar.removeClass('is-stuck')
+            $('.vcard-names-container.js-sticky').css({visibility: ''})
           }
       });
     });
