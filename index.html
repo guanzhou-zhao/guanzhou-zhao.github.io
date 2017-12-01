@@ -2183,13 +2183,18 @@
 
     $(document).ready(function() {
         // all custom jQuery will go here
+        $('button').click(function(event) {
+          event.preventDefault();
+        })
+        $faceboxOverlay = $('<div class="bg-transparent-dark transition-in-out facebox-overlay facebox-overlay-hide facebox-overlay-active" style=""></div>');
         $('.pinned-repos-setting-link').click(function (event) {
-          console.log('clicked')
           $('.facebox').css({'top': '65.5px', 'left': '411.5px', 'display': ''});
+          $faceboxOverlay.insertAfter('.facebox');
           event.preventDefault();
         });
         $('.js-facebox-close').click(function (event) {
           $('.facebox').css('display', 'none');
+          $('.facebox-overlay-active').remove();
         });
         $(document).click(function (event) {
           $('details').not(this).removeAttr("open");
