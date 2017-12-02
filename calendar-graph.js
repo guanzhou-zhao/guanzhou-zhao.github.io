@@ -47,7 +47,7 @@ function addHoverListener($) {
 }
 function bindContributionSettingHandler($) {
   $('.contributions-setting-link').click(function(e) {
-
+    $('.js-calendar-graph rect').attr('fill', '#ebedf0')
     //$('.js-calendar-graph').html(defaultContributionGraph)
   });
 
