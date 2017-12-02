@@ -1,4 +1,5 @@
 function addCalendarGraph($) {
+  bindContributionSettingHandler($);
   if ($('.js-calendar-graph').html().trim().length > 0) return;
 
   var calendarGraphSVG = $('<svg width="676" height="104" class="js-calendar-graph-svg"></svg>');
@@ -43,4 +44,11 @@ function addHoverListener($) {
       $(hoveringRect.which).attr('fill', '#7bc96f')
     }
   })
+}
+function bindContributionSettingHandler($) {
+  $('.contributions-setting-link').click(function(e) {
+
+    //$('.js-calendar-graph').html(defaultContributionGraph)
+  });
+
 }
