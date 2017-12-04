@@ -513,7 +513,6 @@ img {
 .tooltipped::after {
     position: absolute;
     z-index: 1000000;
-    display: none;
     padding: 5px 8px;
     font: normal normal 11px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     -webkit-font-smoothing: subpixel-antialiased;
@@ -530,6 +529,10 @@ img {
     background: rgba(27,31,35,0.8);
     border-radius: 3px;
     opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+.tooltipped-show::after {
+  opacity: 1;
 }
 .tooltipped-n::after, .tooltipped-ne::after, .tooltipped-nw::after {
     right: 50%;
@@ -543,7 +546,6 @@ img {
 .tooltipped::before {
     position: absolute;
     z-index: 1000001;
-    display: none;
     width: 0;
     height: 0;
     color: rgba(27,31,35,0.8);
@@ -551,6 +553,10 @@ img {
     content: "";
     border: 5px solid transparent;
     opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+.tooltipped-show::before {
+  opacity: 1;
 }
 .tooltipped-n::before, .tooltipped-ne::before, .tooltipped-nw::before {
     top: -5px;
@@ -558,9 +564,6 @@ img {
     bottom: auto;
     margin-right: -5px;
     border-top-color: rgba(27,31,35,0.8);
-}
-.tooltipped::after {
-  opacity: 1;
 }
 /* main right */
 .col-9 {
