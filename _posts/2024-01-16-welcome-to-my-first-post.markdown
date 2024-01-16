@@ -1,29 +1,41 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Creating my Github Pages with Jekyll"
 date:   2024-01-16 18:22:10 +1300
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+I have rebuilt my `Github Pages` by following the instruction in [Creating a GitHub Pages site with Jekyll][Creating a GitHub Pages site with Jekyll] of [GitHub Pages documentation][GitHub Pages documentation]. There are only 23 steps.
 
-Jekyll requires blog post files to be named according to the following format:
+At first, the doc is a bit confusing, for some of the optional steps are also numbered in sequence. After reading the steps carefully, my new `Github Pages` was built successfully.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+### The confusing steps:
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+[Splitting a subfolder out into a new repository][Splitting a subfolder out into a new repository], which is not relavent to set up my site.
 
-Jekyll also offers powerful support for code snippets:
+---
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+### Resouces checked:
+
+[Programming language syntax highlighting in Jekyll][Programming language syntax highlighting in Jekyll]
+
+[Markdown Cheat Sheet][Markdown Cheat Sheet]
+
+--- 
+
+### shell commands used:
+
+{% highlight shell %}
+git remote add origin https://github.com/guanzhou-zhao/guanzhou-zhao.github.io.git
+git branch -M main
+git push -u origin main
+
+$ jekyll new --skip-bundle .
+# Creates a Jekyll site in the current directory
+
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[Creating a GitHub Pages site with Jekyll]: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
+[GitHub Pages documentation]: https://docs.github.com/en/pages
+[Splitting a subfolder out into a new repository]: https://docs.github.com/en/get-started/using-git/splitting-a-subfolder-out-into-a-new-repository
+[Programming language syntax highlighting in Jekyll]: https://www.fabriziomusacchio.com/blog/2021-08-11-Syntax_Highlighting_in_Jekyll/
+[Markdown Cheat Sheet]: https://www.markdownguide.org/cheat-sheet/
