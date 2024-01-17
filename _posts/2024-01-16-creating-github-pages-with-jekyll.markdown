@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating my Github Pages with Jekyll"
 date:   2024-01-16 18:22:10 +1300
-categories: jekyll update
+categories: jekyll Github-pages
 ---
 I have rebuilt my `Github Pages` by following the instruction in [Creating a GitHub Pages site with Jekyll][Creating a GitHub Pages site with Jekyll] of [GitHub Pages documentation][GitHub Pages documentation]. There are only 23 steps.
 
@@ -20,6 +20,8 @@ At first, the doc is a bit confusing, for some of the optional steps are also nu
 
 [Markdown Cheat Sheet][Markdown Cheat Sheet]
 
+[Jekyll docs][Jekyll docs]
+
 --- 
 
 ### shell commands used:
@@ -31,6 +33,7 @@ git push -u origin main
 
 $ jekyll new --skip-bundle .
 # Creates a Jekyll site in the current directory
+$ bundle exec jekyll server
 
 {% endhighlight %}
 
@@ -39,3 +42,4 @@ $ jekyll new --skip-bundle .
 [Splitting a subfolder out into a new repository]: https://docs.github.com/en/get-started/using-git/splitting-a-subfolder-out-into-a-new-repository
 [Programming language syntax highlighting in Jekyll]: https://www.fabriziomusacchio.com/blog/2021-08-11-Syntax_Highlighting_in_Jekyll/
 [Markdown Cheat Sheet]: https://www.markdownguide.org/cheat-sheet/
+[Jekyll docs]: https://jekyllrb.com/docs/
