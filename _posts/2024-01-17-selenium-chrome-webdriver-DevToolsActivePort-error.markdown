@@ -29,7 +29,6 @@ GetHandleVerifier [0x00007FF63C5A04F9+689705]
 (No symbol) [0x00007FF63C4688C4]
 BaseThreadInitThunk [0x00007FFCDC6A7344+20]
 RtlUserThreadStart [0x00007FFCDD3A26B1+33]
-
 {% endhighlight %}
 
 ### Solution found from resources:
@@ -52,7 +51,6 @@ driver = webdriver.Chrome(options)
 
 {% highlight shell %}
 DevTools remote debugging is disallowed by the system admin.
-
 {% endhighlight %}
 
 ### Conclusion:

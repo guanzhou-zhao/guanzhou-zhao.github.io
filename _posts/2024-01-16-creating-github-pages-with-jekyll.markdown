@@ -34,7 +34,6 @@ git push -u origin main
 $ jekyll new --skip-bundle .
 # Creates a Jekyll site in the current directory
 $ bundle exec jekyll server
-
 {% endhighlight %}
 
 [Creating a GitHub Pages site with Jekyll]: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
