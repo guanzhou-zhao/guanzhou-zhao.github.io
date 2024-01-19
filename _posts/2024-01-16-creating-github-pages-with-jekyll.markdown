@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating my Github Pages with Jekyll"
 date:   2024-01-16 18:22:10 +1300
-categories: jekyll Github-pages
+categories: github-pages
 ---
 I have rebuilt my `Github Pages` by following the instruction in [Creating a GitHub Pages site with Jekyll][Creating a GitHub Pages site with Jekyll] of [GitHub Pages documentation][GitHub Pages documentation]. There are only 23 steps.
 

@@ -2,8 +2,7 @@
 layout: post
 title:  "Selenium Chrome Webdriver DevToolsActivePort file doesn't exist error"
 date:   2024-01-17 20:52:10 +1300
-categories: [Selenium, Chrome Webdriver]
-tags: [DevToolsActivePort file doesn't exist]
+categories: [Selenium]
 ---
 When running `Selenium` with `chromedriver`, confront errors like below:
 {% highlight shell %}
