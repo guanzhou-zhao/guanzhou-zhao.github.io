@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "git cheatsheet"
+title:  "git create new branch"
 date:   2024-01-31 18:29:10 +1300
 categories: [git]
 ---

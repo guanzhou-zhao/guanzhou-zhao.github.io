@@ -36,11 +36,12 @@ categories: [git]
 > "I want to base my changes on what everybody has already done."
 
 **git rebase standard vs git rebase interactive**
-> interactive rebasing gives complete control over what your project history looks like. This affords a lot of freedom to developers, as it lets them commit a "messy" history while they are focused on writing code, then go back and clean it up after the fact.
 
-> Most developers like to use an interactive rebase to polish a feature branch before merging it into the main code base. This gives them the opportunity to squash insignificant commits, delete obsolete ones, and make sure everything else is in order before committing to the “official” project history. To everybody else, it will look like the entire feature was developed in a single series of well-planned commits.
+> interactive rebasing gives complete control over what the project history looks like. Developers can clean up messy commits history while they were focused on writting code.
 
-> The real power of interactive rebasing can be seen in the history of the resulting main branch. To everybody else, it looks like you're a brilliant developer who implemented the new feature with the perfect amount of commits the first time around. This is how interactive rebasing can keep a project's history clean and meaningful.
+> By squashing insignificant commits, deleting obsolete ones before committing to "official" project history, to everybody else, it will look like the entire feature was developed in a single series of well-planned, perfect amount of commits the first time wround. 
+
+>This is how interactive rebasing can keep project history meaningful.
 
 ### Resources:
 

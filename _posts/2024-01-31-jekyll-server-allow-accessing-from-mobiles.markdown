@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "jekyll cheatsheet"
+title:  "jekyll server allow accessing from mobiles"
 date:   2024-01-31 18:37:10 +1300
 categories: [jekyll]
 ---
