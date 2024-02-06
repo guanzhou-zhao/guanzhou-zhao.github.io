@@ -1,0 +1,29 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+.colors-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 2px solid #eeeeee;
+    min-height: 50vh;
+    min-width: 60vh;
+  }
+  .color-container footer {
+    max-width: 80px;
+  }
+  .e {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .e1 { background-color: #5483f0;}
+  .e2 { background-color: #1daef2;}/* twitter blue */
+  .e3 { background-color: #00aaff;}
+  .e4 { background-color: #11aaff;}
+  .e5 { background-color: #aaaaff;}
+  .e6 { background-color: #4267b2;}/* facebook blue */
