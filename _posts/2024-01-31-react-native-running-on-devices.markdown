@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "react native cheatsheet"
+title:  "react native running on devices"
 date:   2024-01-31 19:14:10 +1300
 categories: [react native]
 ---
