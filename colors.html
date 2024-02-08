@@ -3,7 +3,7 @@ layout: page
 title: Colors
 permalink: /colors/
 ---
-<div id="instruction">click squares to copy coresponding color</div>
+<div id="instruction" style="font-size:1.2em;">click squares to copy coresponding color</div>
 <div class="colors-container">
     <div class="color-container">
         <div class="e e1"></div>
@@ -43,7 +43,7 @@ permalink: /colors/
         const instruction = "click squares to copy coresponding color";
         instruction_element = document.getElementById("instruction")
         instruction_element.innerText = `color ${style.backgroundColor} copied`;
-        instruction_element.style.color = "#E30613";
+        instruction_element.style.color = style.backgroundColor;
         setTimeout(()=>{
             instruction_element.innerText = instruction;
             instruction_element.style.color="inherit"
