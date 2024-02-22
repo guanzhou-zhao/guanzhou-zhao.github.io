@@ -26,7 +26,67 @@ permalink: /colors/
 </div>
 
 <script>
-    function copyColor() {
+    const notis = [];
+    const Notification = function(copiedColor) {
+        this.copiedColor = copiedColor;
+        this.elem;
+  
+        this.create();
+        
+        this.animOptions = {
+            duration: 400,
+            easing: 'easeInOut'
+        }
+        this.show = function() {
+            $(this.elem).velocity(
+            {
+                opacity: [1, 0],
+                marginTop: [0, 75]
+            }, this.animOptions
+            );
+        }
+        
+        this.hide = function() {
+            $(this.elem).velocity(
+            {
+                opacity: [0, 1],
+                marginTop: [-75, 0],
+                display: "none"
+            }, this.animOptions
+            );
+        }
+    }
+    Notification.prototype.create = function() {
+        const noti = document.createElement("div");
+        // noti.innerHTML = "hahahah";
+        noti.classList.add("n-box")
+
+        const close = document.createElement("div");
+        close.classList.add("n-close");
+        close.innerHTML = "&times;"
+        noti.appendChild(close);
+        close.addEventListener("click", (e) => {
+            this.hide();
+        })
+
+        const picture = document.createElement("div");
+        picture.classList.add("n-picture");
+        picture.style.backgroundColor = this.copiedColor;
+        noti.appendChild(picture);
+
+        const message = document.createElement("div");
+        message.classList.add("n-message");
+        message.style.color = this.copiedColor;
+        message.innerHTML = `${this.copiedColor} copied`;
+        noti.appendChild(message);
+
+        this.elem = noti;
+
+        const wrapper = document.querySelector("main .wrapper");
+        wrapper.style.position = "relative";
+        wrapper.appendChild(noti);
+    }
+    function showNotification() {
         const style = getComputedStyle(this);
         // console.log(style.backgroundColor);
         var dummy = document.createElement("textarea");
@@ -40,17 +100,17 @@ permalink: /colors/
         document.execCommand("copy");
         document.body.removeChild(dummy);
 
-        const instruction = "click squares to copy coresponding color";
-        instruction_element = document.getElementById("instruction")
-        instruction_element.innerText = `color ${style.backgroundColor} copied`;
-        instruction_element.style.color = style.backgroundColor;
-        setTimeout(()=>{
-            instruction_element.innerText = instruction;
-            instruction_element.style.color="inherit"
-        }, 2000);
+        
+        const noti = new Notification(style.backgroundColor);
+        noti.show();
+        if (notis.length>0) {
+            notis.pop().hide();
+        }
+        notis.push(noti);
+
     }
     const elements = document.querySelectorAll(".colors-container .e");
     elements.forEach(element => {
-        element.addEventListener("click", copyColor);
+        element.addEventListener("click", showNotification);
     });
 </script>
