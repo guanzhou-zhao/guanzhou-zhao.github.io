@@ -74,7 +74,7 @@ console.log(smallestCommons([1, 13]));
 
 ### simplified solution 2:
 
-{% lighlight javascript}
+{% highlight javascript %}
 function smallestCommons(arr) {
  
   let [small, big] = arr;
