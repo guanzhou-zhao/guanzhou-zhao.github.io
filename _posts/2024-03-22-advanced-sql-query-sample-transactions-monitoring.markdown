@@ -80,6 +80,6 @@ The key part is to use subquery to add end_transaction_datetime to all the trans
 
 [Link to the challenge on HackerRank](https://www.hackerrank.com/skills-verification/sql_advanced)
 
-[SQL query sample - Weather Report](/sql/2024/03/22/advanced-sql-query-sample-weather-report.html)
+[SQL query sample - Weather Report](/sql/2024/03/21/advanced-sql-query-sample-weather-report.html)
 
-[SQL query sample - Winner Report](/sql/2024/03/22/advanced-sql-query-sample-winner-report.html)
+[SQL query sample - Winner Report](/sql/2024/03/21/advanced-sql-query-sample-winner-report.html)

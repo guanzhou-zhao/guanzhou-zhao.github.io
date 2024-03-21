@@ -76,6 +76,6 @@ Get max, avg, min temperature of the months, and use `subquery` or `join` to gat
 
 [Link to the challenge on HackerRank](https://www.hackerrank.com/skills-verification/sql_advanced)
 
-[SQL query sample - Transaction Monitoring](/sql/2024/03/22/advanced-sql-query-sample-transactions-monitoring.html)
+[SQL query sample - Transaction Monitoring](/sql/2024/03/21/advanced-sql-query-sample-transactions-monitoring.html)
 
-[SQL query sample - Winner Report](/sql/2024/03/22/advanced-sql-query-sample-winner-report.html)
+[SQL query sample - Winner Report](/sql/2024/03/21/advanced-sql-query-sample-winner-report.html)
